@@ -54,8 +54,8 @@
   </div>
 -->
 
- <footer class="page-footer">
-          <div class="container">
+ <footer class="page-footer  card blue-grey darken-1">
+          <div class="container ">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Footer Content</h5>
@@ -64,10 +64,13 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                      {% if site.github_username %}
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/{{ site.github_username }}"><span class="username">{{ site.github_username }}</span></a></li>
+                    {% endif %}
+                     {% if site.twitter_username %}
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/{{ site.twitter_username }}"><span class="username">{{ site.twitter_username }}</span></a></li>
+                    {% endif %}
+                 <li><a class="grey-text text-lighten-3" href="#!">Projects</a></li>
                 </ul>
               </div>
             </div>
