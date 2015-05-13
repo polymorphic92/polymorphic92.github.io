@@ -6,8 +6,8 @@ body, html
 .intro
 {
 	text-align: center;
-	padding-top: 8%;
-	padding-bottom: 8%;
+	padding-top: 10%;
+	padding-bottom: 10%;
 	margin-bottom: 20px;
 }
 
@@ -26,6 +26,8 @@ body, html
 	display: inline-block;
 	font-size: 1.2rem;
 }
+
+
 .about .col
 {
 	margin-bottom: 24px;
